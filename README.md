@@ -36,3 +36,7 @@
 ## マーケット
 
 チョコレートを買おうと選択に踏み込めない人
+
+## 画面遷移図
+
+https://www.figma.com/file/zdfGxBBBHW4wXDxgDd7RUb/ChooseChocolate?node-id=0%3A1
