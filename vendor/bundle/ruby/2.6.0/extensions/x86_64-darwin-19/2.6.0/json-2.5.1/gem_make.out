@@ -1,0 +1,13 @@
+current directory: /Users/koheis./pf-app/choose_chocolate/vendor/bundle/ruby/2.6.0/gems/json-2.5.1/ext/json
+/Users/koheis./.rbenv/versions/2.6.4/bin/ruby -I /Users/koheis./.rbenv/versions/2.6.4/lib/ruby/2.6.0 -r ./siteconf20210902-92163-1y4xmrt.rb extconf.rb
+creating Makefile
+
+current directory: /Users/koheis./pf-app/choose_chocolate/vendor/bundle/ruby/2.6.0/gems/json-2.5.1/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/koheis./pf-app/choose_chocolate/vendor/bundle/ruby/2.6.0/gems/json-2.5.1/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/koheis./pf-app/choose_chocolate/vendor/bundle/ruby/2.6.0/gems/json-2.5.1/ext/json
+make "DESTDIR=" install
