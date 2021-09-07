@@ -1,0 +1,80 @@
+html,
+body {
+  height: 100%;
+  background-color: #fff;
+
+}
+
+body {
+  color: #6c3524;
+}
+
+.cover-container {
+  max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+.head {
+  margin-bottom: 2rem;
+  font-size: bold;
+}
+
+.sub-thema {
+  font-family: Allison;
+  font-size: 32px;
+}
+
+/*
+ * Cover
+ */
+
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+/*
+ * Main
+ */
+.thema {
+  font-family: Allison;
+  font-size: 100px;
+}
+
+.explain {
+  font-weight: bold;
+}
+
+.search-button {
+  color: #6c3524;
+  border-color: #6c3524;
+  font-family: Allison;
+  font-size: 28px;
+  font-weight: bold;
+  width: 138px;
+}
+
+.search-button:hover {
+  background-color: #6c3524;
+  color: #fff;
+}
+
+
+/*
+ * Footer
+ */
+.font-color {
+  color: #6c3524;
+}
+
+.font-color:hover {
+  color: #6c3524;
+
+}
+
+.copy-right {
+  margin-top: 24px;
+}
