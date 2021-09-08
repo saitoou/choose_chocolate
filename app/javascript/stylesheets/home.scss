@@ -23,8 +23,16 @@ body {
 }
 
 .sub-thema {
+  color: #6c3524;
   font-family: Allison;
   font-size: 32px;
+  padding-top: 18px;
+  padding-right: 18px;
+}
+
+.sub-thema:hover {
+  color: #6c3524;
+  text-decoration: none;
 }
 
 /*
@@ -39,6 +47,10 @@ body {
 /*
  * Main
  */
+.main-container {
+  padding-top: 100px;
+}
+
 .thema {
   font-family: Allison;
   font-size: 100px;
@@ -76,5 +88,5 @@ body {
 }
 
 .copy-right {
-  margin-top: 24px;
+  margin-top: 18px;
 }
