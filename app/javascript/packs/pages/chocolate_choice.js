@@ -34,85 +34,85 @@ const counter = [];
 //クリック後、切り替え
 q1_01.onclick = function() {
   question01.style.display = "none";
-  question02.style.display = "block";
+  question02.style.display = "";
   counter.push(q1_01.dataset.id);
 }
 q1_02.onclick = function() {
   question01.style.display = "none";
-  question02.style.display = "block";
+  question02.style.display = "";
   counter.push(q1_02.dataset.id);
 }
 q1_03.onclick = function() {
   question01.style.display = "none";
-  question02.style.display = "block";
+  question02.style.display = "";
   counter.push(q1_03.dataset.id);
 }
 q1_04.onclick = function() {
   question01.style.display = "none";
-  question02.style.display = "block";
+  question02.style.display = "";
   counter.push(q1_04.dataset.id);
 }
 
 q2_01.onclick = function() {
   question02.style.display = "none";
-  question03.style.display = "block";
+  question03.style.display = "";
   counter.push(q2_01.dataset.id);
 }
 q2_02.onclick = function() {
   question02.style.display = "none";
-  question03.style.display = "block";
+  question03.style.display = "";
   counter.push(q2_02.dataset.id);
 }
 q2_03.onclick = function() {
   question02.style.display = "none";
-  question03.style.display = "block";
+  question03.style.display = "";
   counter.push(q2_03.dataset.id);
 }
 q2_04.onclick = function() {
   question02.style.display = "none";
-  question03.style.display = "block";
+  question03.style.display = "";
   counter.push(q2_04.dataset.id);
 }
 
 q3_01.onclick = function() {
   question03.style.display = "none";
-  question04.style.display = "block";
+  question04.style.display = "";
   counter.push(q3_01.dataset.id);
 }
 q3_02.onclick = function() {
   question03.style.display = "none";
-  question04.style.display = "block";
+  question04.style.display = "";
   counter.push(q3_02.dataset.id);
 }
 q3_03.onclick = function() {
   question03.style.display = "none";
-  question04.style.display = "block";
+  question04.style.display = "";
   counter.push(q3_03.dataset.id);
 }
 q3_04.onclick = function() {
   question03.style.display = "none";
-  question04.style.display = "block";
+  question04.style.display = "";
   counter.push(q3_04.dataset.id);
 }
 
 q4_01.onclick = function() {
   question04.style.display = "none";
-  result.style.display = "block";
+  result.style.display = "";
   counter.push(q4_01.dataset.id);
 }
 q4_02.onclick = function() {
   question04.style.display = "none";
-  result.style.display = "block";
+  result.style.display = "";
   counter.push(q4_02.dataset.id);
 }
 q4_03.onclick = function() {
   question04.style.display = "none";
-  result.style.display = "block";
+  result.style.display = "";
   counter.push(q4_03.dataset.id);
 }
 q4_04.onclick = function() {
   question04.style.display = "none";
-  result.style.display = "block";
+  result.style.display = "";
   counter.push(q4_04.dataset.id);
 }
 
