@@ -1,0 +1,2 @@
+module ExhaustedChocosHelper
+end

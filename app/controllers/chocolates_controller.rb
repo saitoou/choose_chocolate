@@ -1,4 +1,9 @@
 class ChocolatesController < ApplicationController
+
+  def new
+    @chocolate = Chocolate.new
+  end
+
   def index
     @chocolates = Chocolate.all
   end
@@ -8,11 +13,9 @@ class ChocolatesController < ApplicationController
   end
 
   def result
-    @chocolate_result = 
   end
 
-  def question
-    @chocolate_choise = 
+  def choice
   end
 
   private
