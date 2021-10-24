@@ -1,0 +1,17 @@
+body {
+  height: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.card {
+  margin-bottom: 12px;
+  width: 350px;
+}
