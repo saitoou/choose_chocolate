@@ -1,6 +1,6 @@
 <%# お勧めチョコ一覧表示、カード型で？ー＞クリック後、モーダルウィンドウ表示 %>
 <div class="flex">
-  <% @exhausted_chocos.each do |choco| %>
+  <% @exhausted_choco.each do |choco| %>
     <div class="card text-center">
       <div class="card-name">
         <%= choco.name %>
@@ -13,8 +13,8 @@
       </div>
     </div>
   <% end %>
-  <%= link_to '#', class:'btn' do %>
-  <p>チョコレート一覧</p>
+  <%= link_to '#', class:'btn btn-lg btn-block' do %>
+  <p>チョコレート</p>
   <% end %>
 <div>
 
