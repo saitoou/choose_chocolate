@@ -1,0 +1,33 @@
+.form {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.card {
+  margin-bottom: 12px;
+  width: 560px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.btn-choco-list {
+  padding-top: 18px;
+  color: #6c3524;
+  border-color: #6c3524;
+  font-size: 28px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+.btn-choco-list:hover {
+  background-color: #6c3524;
+  color: #fff;
+}
