@@ -1,5 +1,5 @@
 <%# お勧めチョコ一覧表示、カード型で？ー＞クリック後、モーダルウィンドウ表示 %>
-<div class="flex">
+<div class="form">
   <% @good_stimulus_choco.each do |choco| %>
   <div class="card">
     <div class="card-name">
@@ -13,7 +13,7 @@
     </div>
   </div>
   <% end %>
-  <%= link_to '#', class:'btn btn-lg btn-block' do %>
-  <p>チョコレート</p>
+  <%= link_to '#', class:'btn btn-choco-list' do %>
+  <p>チョコレート一覧</p>
   <% end %>
 </div>
