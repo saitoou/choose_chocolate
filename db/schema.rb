@@ -29,7 +29,7 @@ ActiveRecord::Schema.define(version: 2021_09_05_033241) do
   end
 
   create_table "reviews", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci", force: :cascade do |t|
-    t.integer "chocolate_id"
+    t.bigint "chocolate_id", null: false
     t.integer "sweet"
     t.integer "cacao"
     t.integer "appearance"
@@ -37,6 +37,8 @@ ActiveRecord::Schema.define(version: 2021_09_05_033241) do
     t.integer "melt"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["chocolate_id"], name: "index_reviews_on_chocolate_id"
   end
 
+  add_foreign_key "reviews", "chocolates"
 end

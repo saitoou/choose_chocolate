@@ -1,2 +1,20 @@
-<h1>ExhaustedChocos#new</h1>
-<p>Find me in app/views/exhausted_chocos/new.html.erb</p>
+<%# お勧めチョコ一覧表示、カード型で？ー＞クリック後、モーダルウィンドウ表示 %>
+<div class="flex">
+  <% @exhausted_chocos.each do |choco| %>
+    <div class="card text-center">
+      <div class="card-name">
+        <%= choco.name %>
+      </div>
+      <div class="card-body">
+        <div>image: </div>
+        <%= choco.image %>
+        <div>detail: </div>
+        <%= choco.detail %>
+      </div>
+    </div>
+  <% end %>
+  <%= link_to '#', class:'btn' do %>
+  <p>チョコレート一覧</p>
+  <% end %>
+<div>
+

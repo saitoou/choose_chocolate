@@ -1,5 +1,6 @@
 class ChocolatesController < ApplicationController
 
+# chocolate一覧を見るためのcontroller
   def new
     @chocolate = Chocolate.new
   end
@@ -11,14 +12,5 @@ class ChocolatesController < ApplicationController
   def show
     @chocolate = Chocolate.find(params[:id])
   end
-
-  def result
-  end
-
-  def choice
-  end
-
-  private
-
   
 end

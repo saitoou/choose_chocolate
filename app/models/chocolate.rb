@@ -1,4 +1,5 @@
 class Chocolate < ApplicationRecord
-  has_many :reviews
+  has_one :review, dependent: :destroy
   validates :name, presence: true
+
 end

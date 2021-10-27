@@ -1,2 +1,19 @@
-<h1>StressFreeChocos#new</h1>
-<p>Find me in app/views/stress_free_chocos/new.html.erb</p>
+<%# お勧めチョコ一覧表示、カード型で？ー＞クリック後、モーダルウィンドウ表示 %>
+<div class="flex">
+  <% @stress_free_chocos.each do |choco| %>
+  <div class="card">
+    <div class="card-name">
+      <%= choco.name %>
+    </div>
+    <div class="card-body">
+      <div>image: </div>
+      <%= choco.image %>
+      <div>detail: </div>
+      <%= choco.detail %>
+    </div>
+  </div>
+  <% end %>
+  <%= link_to '#', class:'btn' do %>
+  <p>チョコレート一覧</p>
+  <% end %>
+</div>
