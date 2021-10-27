@@ -1,2 +1,0 @@
-class ChocolateChoice < ApplicationRecord
-end

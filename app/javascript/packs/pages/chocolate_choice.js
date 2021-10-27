@@ -137,7 +137,7 @@ result.onclick = function() {
     answer1.style.display = "";
   } else if (total > 10 && total < 16 ) {
     answer2.style.display = "";
-  } else if (total > 3 && total < 11 ) {
+  } else if (total > 5 && total < 11 ) {
     answer3.style.display = "";
   } else {
     answer4.style.display = "";
