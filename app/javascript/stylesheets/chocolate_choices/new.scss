@@ -1,0 +1,84 @@
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.form {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+.card {
+  margin-bottom: 12px;
+  width: 560px;
+}
+
+.button {
+  margin-left: 180px;
+  color: #6c3524;
+  border-color: #6c3524;
+  font-size: 28px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #6c3524;
+  color: #fff;
+}
+
+.btn {
+  color: #6c3524;
+  border-color: #6c3524;
+  font-size: 28px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    padding-top: 12px;
+  }
+}
+
+.btn:hover {
+  background-color: #6c3524;
+  color: #fff;
+}
+
+#result {
+  color: #6c3524;
+  border-color: #6c3524;
+  font-family: Allison;
+  font-size: 28px;
+  font-weight: bold;
+
+}
+
+#result:hover {
+  background-color: #6c3524;
+  color: #fff;
+}
+
+
+.btn-choco {
+  color: #6c3524;
+  border-color: #6c3524;
+  font-size: 28px;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #6c3524;
+  color: #fff;
+}

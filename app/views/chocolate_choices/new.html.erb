@@ -2,7 +2,7 @@
 
 <%# 診断項目一覧 %>
   <div id="question01" class="card">
-    <h1>Q1.aaaaaaa</h1>
+    <h1>Q1.今の気分は？</h1>
       <%= link_to "#", class: "button q1", id: "q1_01", data: {id: 1}, "data-turbolinks": false do %>
       <div>so good</div>
       <% end %>
@@ -18,7 +18,7 @@
   </div>
 
   <div id="question02" class="card" style="display: none;">
-    <h1>Q2.bbbbbb</h1>
+    <h1>Q2.今楽しめてる？</h1>
       <%= link_to "#", class: "button q2", id: "q2_01", data: {id: 1}, "data-turbolinks": false do %>
       <div>so good</div>
       <% end %>
@@ -34,7 +34,7 @@
   </div>
 
   <div id="question03" class="card" style="display: none;">
-    <h1>Q3.cccccc</h1>
+    <h1>Q3.学校や仕事はどう？</h1>
       <%= link_to "#", class: "button q3", id: "q3_01", data: {id: 1}, "data-turbolinks": false do %>
       <div>so good</div>
       <% end %>
@@ -50,7 +50,7 @@
   </div>
 
   <div id="question04" class="card" style="display: none;">
-    <h1>Q4.dddddd</h1>
+    <h1>Q4.明日を考える気分は？</h1>
       <%= link_to "#", class: "button q2", id: "q4_01", data: {id: 1}, "data-turbolinks": false do %>
       <div>so good</div>
       <% end %>
@@ -66,35 +66,35 @@
   </div>
 
   <div id="result" class="btn btn-light" style="display: none;">
-    <h2>診断結果は・・・</h2>
+    <h2>診断結果</h2>
   </div>
 
 <%# 回答一覧 %>
 
   <div id="answer01" class="result" style="display: none;">
     <h2>今すぐチョコと共に休もう。</h2>
-    <%= link_to exhausted_chocos_path, class: "btn" do %>
+    <%= link_to exhausted_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
   </div>
 
   <div id="answer02" class="result" style="display: none;">
     <h2>お疲れ気味です。</h2>
-    <%= link_to tired_chocos_path, class: "btn" do %>
+    <%= link_to tired_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
   </div>
 
   <div id="answer03" class="result" style="display: none;">
     <h2>いい刺激のストレス！！</h2>
-    <%= link_to good_stimulus_chocos_path, class: "btn" do %>
+    <%= link_to good_stimulus_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
   </div>
 
   <div id="answer04" class="result" style="display: none;">
     <h2>ストレスなし！！</h2>
-    <%= link_to stress_free_chocos_path, class: "btn" do %>
+    <%= link_to stress_free_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
   </div>
