@@ -10,14 +10,7 @@ Rails.application.routes.draw do
   get 'good_stimulus_chocos', to: 'good_stimulus_chocos#new'
   get 'tired_chocos', to: 'tired_chocos#new'
   get 'exhausted_chocos', to: 'exhausted_chocos#new'
-
-  
-  get 'reviews/create'
-  get 'reviews/update'
-  get 'reviews/destroy'
-  get 'chocolates/index'
-  get 'chocolates/show'
-  get 'chocolates/result'
-  get 'chocolate_choices/new'
+  #chocolates list
+  get 'choicolates_list', to:  'chocolates#index'
   
 end
