@@ -3,13 +3,16 @@
   <% @stress_free_choco.each do |choco| %>
   <div class="card">
     <div class="card-name">
-      <%= choco.name %>
+      <h1><%= choco.name %></h1>
     </div>
     <div class="card-body">
       <div>image: </div>
+      <% if choco.image.blank? %>
+      <img src="<%= asset_pack_path 'media/images/bar-chocolate.png' %>" width="50%" heught="50%" alt="choco"></img>
+      <% else %>
       <%= choco.image %>
-      <div>detail: </div>
-      <%= choco.detail %>
+      <% end %>
+      <h3><%= choco.detail %></h3>
     </div>
   </div>
   <% end %>
