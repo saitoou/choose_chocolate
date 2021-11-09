@@ -13,9 +13,15 @@
       <% end %>
       <h3><%= choco.detail %></h3>
     </div>
+    <div class=result-chart>
+    <div id="chart" data-choco-id="<%= @chocolate %>" data-sweet-value=<%= @tired_choco.sweet %> data-cacao-value=<%= @tired_choco.cacao %> data-appearance-value=<%= @tired_choco.appearance %> data-texture-value=<%= @tired_choco.texture %> data-melt-value=<%= @tired_choco.melt %> ></div>
+    <canvas id="myChart></canvas>
+    </div>
   </div>
   <% end %>
   <%= link_to chocolates_list_path, class:'btn btn-choco-list' do %>
   <p>チョコレート</p>
   <% end %>
 </div>
+
+<%= javascript_pack_tag 'pages/result_chart' %>
