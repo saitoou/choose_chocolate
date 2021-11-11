@@ -1,7 +1,6 @@
-<%# お勧めチョコ一覧表示、カード型で？ー＞クリック後、モーダルウィンドウ表示 %>
 <div class="form">
   <% @good_stimulus_choco.each do |choco| %>
-  <div class="card">
+  <div class="card border-0">
     <div class="card-name">
       <h1><%= choco.name %></h1>
     </div>
@@ -13,6 +12,9 @@
       <% end %>
       <h3><%= choco.detail %></h3>
     </div>
+    <div class=result-chart>
+    <div id="chart"  data-sweet-value="<%= @good_stimulus_review.sweet %>" data-cacao-value="<%= @good_stimulus_review.cacao %>" data-appearance-value="<%= @good_stimulus_review.appearance %>" data-texture-value="<%= @good_stimulus_review.texture %>" data-melt-value="<%= @good_stimulus_review.melt %>" ></div>
+    <canvas id="myChart" width="150px" height="150px"></canvas>
   </div>
   <% end %>
   <%= link_to chocolates_list_path, class:'btn btn-choco-list' do %>

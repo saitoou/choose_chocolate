@@ -1,6 +1,4 @@
-
 const choco = document.getElementById("chart");
-// const chocoIdChart = choco.dataset.chocoId;
 const sweet = choco.dataset.sweetValue;
 const cacao = choco.dataset.cacaoValue;
 const appearance = choco.dataset.appearanceValue;

@@ -1,7 +1,6 @@
-<%# お勧めチョコ一覧表示、カード型で？ー＞クリック後、モーダルウィンドウ表示 %>
 <div class="form">
   <% @stress_free_choco.each do |choco| %>
-  <div class="card">
+  <div class="card border-0">
     <div class="card-name">
       <h1><%= choco.name %></h1>
     </div>
@@ -14,6 +13,9 @@
       <% end %>
       <h3><%= choco.detail %></h3>
     </div>
+    <div class=result-chart>
+    <div id="chart"  data-sweet-value="<%= @stress_free_review.sweet %>" data-cacao-value="<%= @stress_free_review.cacao %>" data-appearance-value="<%= @stress_free_review.appearance %>" data-texture-value="<%= @stress_free_review.texture %>" data-melt-value="<%= @tired_review.melt %>" ></div>
+    <canvas id="myChart" width="150px" height="150px"></canvas>
   </div>
   <% end %>
   <%= link_to chocolates_list_path, class:'btn btn-choco-list' do %>
