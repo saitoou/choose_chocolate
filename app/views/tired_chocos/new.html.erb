@@ -14,8 +14,8 @@
       <h3><%= choco.detail %></h3>
     </div>
     <div class=result-chart>
-    <div id="chart" data-choco-id="<%= @chocolate %>" data-sweet-value=<%= @tired_choco.sweet %> data-cacao-value=<%= @tired_choco.cacao %> data-appearance-value=<%= @tired_choco.appearance %> data-texture-value=<%= @tired_choco.texture %> data-melt-value=<%= @tired_choco.melt %> ></div>
-    <canvas id="myChart></canvas>
+    <div id="chart"  data-sweet-value="<%= @tired_review.sweet %>" data-cacao-value="<%= @tired_review.cacao %>" data-appearance-value="<%= @tired_review.appearance %>" data-texture-value="<%= @tired_review.texture %>" data-melt-value="<%= @tired_review.melt %>" ></div>
+    <canvas id="myChart" width="200px" height="200px"></canvas>
     </div>
   </div>
   <% end %>
