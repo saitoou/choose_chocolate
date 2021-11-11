@@ -15,7 +15,7 @@ const myChart = new Chart(ctx, {
     datasets: [{
         label: '',
         data: [sweet, cacao, appearance, texture, melt],
-        backgroundColor: 'rgba(197,149,107,0.8)',
+        backgroundColor: 'rgba(197,149,107,0.5)',
         borderColor: 'rgba(197,149,107,1)',
         borderWidth: 1,
         pointBorderColor: '#fff',
@@ -27,10 +27,16 @@ const myChart = new Chart(ctx, {
       display: false
     },
     scale: {
+      pointLabels: {
+        fontSize: 30,
+        fontFamily: 'Allison',
+        fontColor: '#C5956B'
+      },
       ticks: {
         suggestedMin: 0,
         suggestedMax: 5,
         stepSize: 1,
+        fontSize: 12,
         callback: function(value) {
           return value
         }
