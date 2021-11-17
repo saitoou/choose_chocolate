@@ -45,6 +45,7 @@ group :development do
   gem 'rails_best_practices'
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'letter_opener_web', '~>1.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
