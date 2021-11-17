@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  #confirm mail letter_opener_web
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener" 
+  end
   #static_pages_path
   root 'static_pages#home'
   get 'privacy', to: 'static_pages#privacy'
@@ -12,5 +16,6 @@ Rails.application.routes.draw do
   get 'exhausted_chocos', to: 'exhausted_chocos#new'
   #chocolates list
   get 'chocolates_list', to:  'chocolates#index'
-  
+  #send_mail_page
+  resource :inquiries, only: %i[new create]
 end
