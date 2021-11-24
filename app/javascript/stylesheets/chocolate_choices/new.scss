@@ -19,7 +19,7 @@ body {
 }
 
 .button {
-  margin-left: 180px;
+  margin-left: 140px;
   color: #6c3524;
   border-color: #6c3524;
   font-size: 28px;
@@ -34,6 +34,11 @@ body {
   color: #fff;
 }
 
+.btn-card {
+  width: 200px;
+  height: 200px;
+}
+
 .btn {
   color: #6c3524;
   border-color: #6c3524;
@@ -42,6 +47,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom: 20px;
 
   h2 {
     padding-top: 12px;
@@ -51,6 +57,11 @@ body {
 .btn:hover {
   background-color: #6c3524;
   color: #fff;
+}
+
+.result-btn {
+  margin-bottom: 120px;
+  width: 560px;
 }
 
 #result {
@@ -67,6 +78,9 @@ body {
   color: #fff;
 }
 
+.result {
+  margin-bottom: 180px;
+}
 
 .btn-choco {
   color: #6c3524;
