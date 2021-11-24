@@ -6,7 +6,7 @@
     </div>
     <div class="card-body">
       <% if choco.image.blank? %>
-      <img src="<%= asset_pack_path 'media/images/bar-chocolate.png' %>" width="50%" heught="50%" alt="choco"></img>
+        <%= image_tag 'bar-chocolate.png', id: 'checklist' , size: "450x300"%>
       <% else %>
       <%= choco.image %>
       <% end %>
