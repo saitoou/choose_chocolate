@@ -1,18 +1,15 @@
-<div class="form">
+<div class="card-deck">
   <% @chocolates_list.each do |choco| %>
-    <div class="card">
-      <div class="card-name">
-        <h1><%= choco.name %></h1>
-      </div>
-      <div class="card-body">
-        <% if choco.image.blank? %>
-      <img src="<%= asset_pack_path 'media/images/bar-chocolate.png' %>" width="50%" heught="50%" alt="choco"></img>
-      <% else %>
+  <div class="card">
+    <% if choco.image.blank? %>
+      <%= image_tag 'bar-chocolate.png', id: 'bar-choco' , size: "100%x180"%>
+    <% else %>
       <%= choco.image %>
-      <% end %>
-        <h3><%= choco.detail %></h3>
-      </div>
+    <% end %>
+    <div class="card-body">
+      <h5 class="card-title"><%= choco.name %></h5>
+      <p class="card-text"><%= choco.detail %></p>
     </div>
+  </div>
   <% end %>
-<div>
-
+</div>
