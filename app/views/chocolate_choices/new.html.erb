@@ -1,7 +1,7 @@
 <div class="form">
 
 <%# 診断項目一覧 %>
-  <div id="question01" class="card border-0">
+  <div id="question01" class="card border-0 ">
     <h1>Q1.今の気分は？</h1>
       <%= link_to "#", class: "button q1 w-50", id: "q1_01", data: {id: 1}, "data-turbolinks": false do %>
       <div>最高！！</div>
@@ -10,7 +10,7 @@
       <div>良き！</div>
       <% end %>
       <%= link_to "#", class: "button q1 w-50", id: "q1_03", data: {id: 3}, "data-turbolinks": false do %>
-      <div>まあまあかな</div>
+      <div>まあまあ</div>
       <% end %>
       <%= link_to "#", class: "button q1 w-50", id: "q1_04", data: {id: 4}, "data-turbolinks": false do %>
       <div>最悪！！</div>
@@ -65,8 +65,15 @@
       <% end %>
   </div>
 
-  <div id="result" class="btn btn-light" style="display: none;">
-    <h2>診断結果</h2>
+  <%= image_tag 'checklist-1266989.png', id: 'checklist' , size: "450x300"%>
+  
+  <div class="card border-0">
+    <div class="result-btn border-0">
+      <div id="result" class="btn btn-light" style="display: none;">
+        <h2>診断結果</h2>
+      </div>
+    </div>
+  <%= image_tag 'bar-chocolate.png', id: 'bar_choco' , size: "450x300"%>
   </div>
 
 <%# 回答一覧 %>

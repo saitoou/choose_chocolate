@@ -20,7 +20,11 @@ const q4_02 = document.getElementById("q4_02");
 const q4_03 = document.getElementById("q4_03");
 const q4_04 = document.getElementById("q4_04");
 
+const image = document.getElementById("checklist");
+
 const result = document.getElementById("result");
+
+const bar_choco = document.getElementById("bar_choco");
 
 //質問項目の切り替え
 const question01 = document.getElementById("question01");
@@ -30,6 +34,8 @@ const question04 = document.getElementById("question04");
 
 //ストレス判断指数
 const counter = [];
+
+bar_choco.style.display = "none";
 
 //クリック後、切り替え
 q1_01.onclick = function() {
@@ -97,22 +103,30 @@ q3_04.onclick = function() {
 
 q4_01.onclick = function() {
   question04.style.display = "none";
+  image.style.display = "none";
   result.style.display = "";
+  bar_choco.style.display = "";
   counter.push(q4_01.dataset.id);
 }
 q4_02.onclick = function() {
   question04.style.display = "none";
+  image.style.display = "none";
   result.style.display = "";
+  bar_choco.style.display = "";
   counter.push(q4_02.dataset.id);
 }
 q4_03.onclick = function() {
   question04.style.display = "none";
+  image.style.display = "none";
   result.style.display = "";
+  bar_choco.style.display = "";
   counter.push(q4_03.dataset.id);
 }
 q4_04.onclick = function() {
   question04.style.display = "none";
+  image.style.display = "none";
   result.style.display = "";
+  bar_choco.style.display = "";
   counter.push(q4_04.dataset.id);
 }
 
@@ -124,6 +138,7 @@ const answer4 = document.getElementById("answer04");
 
 result.onclick = function() {
   result.style.display = "none";
+  bar_choco.style.display = "none";
   //足し算したいので文字→数値に変換
   let counterNumber = counter.map(function(v) {
     return parseInt(v);
