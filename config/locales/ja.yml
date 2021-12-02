@@ -1,0 +1,7 @@
+ja:
+  enums:
+    inquiry:
+      title:
+        bug: "不具合"
+        request: "追加・要望"
+        others: "その他" 
