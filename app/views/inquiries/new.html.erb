@@ -1,22 +1,22 @@
 <div class="container text-center">
-  <h1 class="font-wegiht-bold">お問い合わせ</h1>
+  <h1 class="mb-4 text-center">お問い合わせ</h1>
 </div>
 <div class="container text-center">
   <%= form_with model: @inquiry, url: inquiries_path, local: true do |f| %>
-    <div class="input-form">
-    <%= f.label :email, "メールアドレス" %><br>
+    <div class="mb-3">
+    <%= f.label :email, "メールアドレス", class: "font-weight-bold" %><br>
     <%= f.text_field :email, type: "text", placeholder: "choco@example.com", size: "30x2" %>
     </div>
-    <div class="input-form">
-    <%= f.label :title, "お問い合わせ項目" %><br>
-    <%= f.select :title, Inquiry.titles.keys.map {|k| [k, k]} %>
+    <div class="mb-3">
+    <%= f.label :title, "お問い合わせ項目", class: "font-weight-bold" %><br>
+    <%= f.select :title, Inquiry.titles.keys.map {|k| [I18n.t("enums.inquiry.title.#{k}"), k]} %>
     </div>
-    <div class="input-form">
-    <%= f.label :message, "内容" %><br>
+    <div class="mb-4">
+    <%= f.label :message, "内容", class: "font-weight-bold" %><br>
     <%= f.text_area :message, class: "comment-area", type:"text", placeholder: "お問い合わせ内容", rows: "5", size: "45x5" %>
     <%= render 'shared/error_messages', model: f.object %>
     </div>
-    <div class="actions text-center">
+    <div class="actions text-center mb-4">
     <%= f.submit '送信', class: "btn" %>
     </div>
   <% end %>
