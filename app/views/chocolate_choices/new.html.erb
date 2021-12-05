@@ -2,66 +2,66 @@
 
 <%# 診断項目一覧 %>
   <div id="question01" class="card border-0 ">
-    <h1>Q1.今の気分は？</h1>
+    <h1>Q1.休日でも十分休めない。</h1>
       <%= link_to "#", class: "button q1 w-50", id: "q1_01", data: {id: 1}, "data-turbolinks": false do %>
-      <div>最高！！</div>
+      <div>いいえ</div>
       <% end %>
       <%= link_to "#", class: "button q1 w-50", id: "q1_02", data: {id: 2}, "data-turbolinks": false do %>
-      <div>良き！</div>
+      <div>わからない</div>
       <% end %>
       <%= link_to "#", class: "button q1 w-50", id: "q1_03", data: {id: 3}, "data-turbolinks": false do %>
-      <div>まあまあ</div>
+      <div>時々</div>
       <% end %>
       <%= link_to "#", class: "button q1 w-50", id: "q1_04", data: {id: 4}, "data-turbolinks": false do %>
-      <div>最悪！！</div>
+      <div>はい</div>
       <% end %>
   </div>
 
   <div id="question02" class="card border-0" style="display: none;">
-    <h1>Q2.今楽しめてる？</h1>
+    <h1>Q2.長時間同じ姿勢でいる</h1>
       <%= link_to "#", class: "button q2 w-50", id: "q2_01", data: {id: 1}, "data-turbolinks": false do %>
-      <div>ちょー楽しい！！</div>
+      <div>いいえ</div>
       <% end %>
       <%= link_to "#", class: "button q2 w-50", id: "q2_02", data: {id: 2}, "data-turbolinks": false do %>
-      <div>楽しき</div>
+      <div>時々</div>
       <% end %>
       <%= link_to "#", class: "button q2 w-50", id: "q2_03", data: {id: 3}, "data-turbolinks": false do %>
-      <div>フツーーー</div>
+      <div>はい</div>
       <% end %>
       <%= link_to "#", class: "button q2 w-50", id: "q2_04", data: {id: 4}, "data-turbolinks": false do %>
-      <div>つまらなーーい</div>
+      <div>かなりはい/div>
       <% end %>
   </div>
 
   <div id="question03" class="card border-0" style="display: none;">
-    <h1>Q3.学校や仕事はどう？</h1>
+    <h1>Q3.疲れが翌日まで残る</h1>
       <%= link_to "#", class: "button q3 w-50", id: "q3_01", data: {id: 1}, "data-turbolinks": false do %>
-      <div>リア充！！</div>
+      <div>いいえ</div>
       <% end %>
       <%= link_to "#", class: "button q3 w-50", id: "q3_02", data: {id: 2}, "data-turbolinks": false do %>
-      <div>まあ楽しい！</div>
+      <div>わからない</div>
       <% end %>
       <%= link_to "#", class: "button q3 w-50", id: "q3_03", data: {id: 3}, "data-turbolinks": false do %>
-      <div>んん、微妙。</div>
+      <div>時々</div>
       <% end %>
       <%= link_to "#", class: "button q3 w-50", id: "q3_04", data: {id: 4}, "data-turbolinks": false do %>
-      <div>辞めたすぎる</div>
+      <div>はい</div>
       <% end %>
   </div>
 
   <div id="question04" class="card border-0" style="display: none;">
-    <h1>Q4.明日を考える気分は？</h1>
+    <h1>Q4.食欲がない</h1>
       <%= link_to "#", class: "button q2 w-50", id: "q4_01", data: {id: 1}, "data-turbolinks": false do %>
-      <div>早くきて欲しい！</div>
+      <div>いいえ</div>
       <% end %>
       <%= link_to "#", class: "button q2 w-50", id: "q4_02", data: {id: 2}, "data-turbolinks": false do %>
-      <div>何やろうかなー。</div>
+      <div>わからない</div>
       <% end %>
       <%= link_to "#", class: "button q2 w-50", id: "q4_03", data: {id: 3}, "data-turbolinks": false do %>
-      <div>んんー考えたくない</div>
+      <div>時々</div>
       <% end %>
       <%= link_to "#", class: "button q2 w-50", id: "q4_04", data: {id: 4}, "data-turbolinks": false do %>
-      <div>明日なんてあるの？</div>
+      <div>はい</div>
       <% end %>
   </div>
 
@@ -79,28 +79,32 @@
 <%# 回答一覧 %>
 
   <div id="answer01" class="result" style="display: none;">
-    <h2>今すぐチョコと共に休もう。</h2>
+    <h2>今すぐチョコを食べて休みましょう。</h2>
+    <h3>チョコレートは疲労回復・リラックス効果が期待できます。</h3>
     <%= link_to exhausted_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
   </div>
 
   <div id="answer02" class="result" style="display: none;">
-    <h2>お疲れ気味です。</h2>
+    <h2>かなり疲れ気味です。チョコを食べましょう。</h2>
+    <h3>チョコレートは気分やストレスを軽くします。</h3>
     <%= link_to tired_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
   </div>
 
   <div id="answer03" class="result" style="display: none;">
-    <h2>いい刺激のストレス！！</h2>
+    <h2>疲れが溜まっています。チョコを食べて疲労回復しましょう。</h2>
+    <h3>チョコレートは精神安定効果が期待できます。</h3>
     <%= link_to good_stimulus_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
   </div>
 
   <div id="answer04" class="result" style="display: none;">
-    <h2>ストレスなし！！</h2>
+    <h2>毎日を楽しめています。健康維持にチョコを食べましょう。</h2>
+    <h3>チョコレートは肌老化防止、動脈硬化の予防が期待できます。</h3>
     <%= link_to stress_free_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
