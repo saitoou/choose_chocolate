@@ -29,7 +29,7 @@
       <div>はい</div>
       <% end %>
       <%= link_to "#", class: "button q2 w-50", id: "q2_04", data: {id: 4}, "data-turbolinks": false do %>
-      <div>かなりはい/div>
+      <div>かなりはい</div>
       <% end %>
   </div>
 
@@ -79,32 +79,32 @@
 <%# 回答一覧 %>
 
   <div id="answer01" class="result" style="display: none;">
-    <h2>今すぐチョコを食べて休みましょう。</h2>
-    <h3>チョコレートは疲労回復・リラックス効果が期待できます。</h3>
+    <h2 class="mb-4">今すぐチョコを食べて休みましょう。</h2>
+    <h3 class="mb-3">チョコレートは疲労回復・リラックス効果が期待できます。</h3>
     <%= link_to exhausted_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
   </div>
 
   <div id="answer02" class="result" style="display: none;">
-    <h2>かなり疲れ気味です。チョコを食べましょう。</h2>
-    <h3>チョコレートは気分やストレスを軽くします。</h3>
+    <h2 class="mb-4">かなり疲れ気味です。チョコを食べましょう。</h2>
+    <h3 class="mb-3">チョコレートは気分やストレスを軽くします。</h3>
     <%= link_to tired_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
   </div>
 
   <div id="answer03" class="result" style="display: none;">
-    <h2>疲れが溜まっています。チョコを食べて疲労回復しましょう。</h2>
-    <h3>チョコレートは精神安定効果が期待できます。</h3>
+    <h2 class="mb-4">疲れが溜まっています。チョコを食べて疲労回復しましょう。</h2>
+    <h3 class="mb-3">チョコレートは精神安定効果が期待できます。</h3>
     <%= link_to good_stimulus_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
   </div>
 
   <div id="answer04" class="result" style="display: none;">
-    <h2>毎日を楽しめています。健康維持にチョコを食べましょう。</h2>
-    <h3>チョコレートは肌老化防止、動脈硬化の予防が期待できます。</h3>
+    <h2 class="mb-4">毎日を楽しめています。健康維持にチョコを食べましょう。</h2>
+    <h3 class="mb-3">チョコレートは肌老化防止、動脈硬化の予防が期待できます。</h3>
     <%= link_to stress_free_chocos_path, class: "btn btn-choco" do %>
     <div>ピッタリなチョコは</div>
     <% end %>
