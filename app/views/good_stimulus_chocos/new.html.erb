@@ -6,7 +6,7 @@
     </div>
     <div class="card-body">
       <% if choco.image.blank? %>
-        <%= image_tag 'bar-chocolate.png', id: 'checklist' , size: "450x300"%>
+        <%= image_tag 'bar-chocolate.png', id: 'checklist' , size: "350x200"%>
       <% else %>
       <%= choco.image %>
       <% end %>
@@ -14,7 +14,7 @@
     </div>
     <div class=result-chart>
     <div id="chart"  data-sweet-value="<%= @good_stimulus_review.sweet %>" data-cacao-value="<%= @good_stimulus_review.cacao %>" data-appearance-value="<%= @good_stimulus_review.appearance %>" data-texture-value="<%= @good_stimulus_review.texture %>" data-melt-value="<%= @good_stimulus_review.melt %>" ></div>
-    <canvas id="myChart" width="150px" height="150px"></canvas>
+    <canvas id="myChart" width="100px" height="100px"></canvas>
   </div>
   <% end %>
   <%= link_to chocolates_list_path, class:'btn btn-choco-list' do %>

@@ -7,7 +7,7 @@
     </div>
     <div class="card-body">
       <% if choco.image.blank? %>
-        <%= image_tag 'bar-chocolate.png', id: 'checklist' , size: "450x300"%>
+        <%= image_tag 'bar-chocolate.png', id: 'checklist' , size: "350x200"%>
       <% else %>
       <%= choco.image %>
       <% end %>
@@ -15,7 +15,7 @@
     </div>
     <div class=result-chart>
     <div id="chart"  data-sweet-value="<%= @tired_review.sweet %>" data-cacao-value="<%= @tired_review.cacao %>" data-appearance-value="<%= @tired_review.appearance %>" data-texture-value="<%= @tired_review.texture %>" data-melt-value="<%= @tired_review.melt %>" ></div>
-    <canvas id="myChart" width="150px" height="150px"></canvas>
+    <canvas id="myChart" width="100px" height="100px"></canvas>
     </div>
   </div>
   <% end %>

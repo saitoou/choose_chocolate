@@ -6,7 +6,7 @@
       </div>
       <div class="card-body">
         <% if choco.image.blank? %>
-          <%= image_tag 'bar-chocolate.png', id: 'checklist' , size: "450x300"%>
+          <%= image_tag 'bar-chocolate.png', id: 'checklist' , size: "350x200"%>
         <% else %>
         <%= choco.image %>
         <% end %>
@@ -14,12 +14,12 @@
       </div>
       <div class=result-chart>
     <div id="chart"  data-sweet-value="<%= @exhausted_review.sweet %>" data-cacao-value="<%= @exhausted_review.cacao %>" data-appearance-value="<%= @exhausted_review.appearance %>" data-texture-value="<%= @exhausted_review.texture %>" data-melt-value="<%= @exhausted_review.melt %>" ></div>
-    <canvas id="myChart" width="150px" height="150px"></canvas>
+    <canvas id="myChart" width="100px" height="100px"></canvas>
     </div>
   <% end %>
-  <%= link_to chocolates_list_path, class:'btn btn-choco-list' do %>
+  <%= link_to chocolates_list_path, class:'btn btn-exhausted-chocos-list' do %>
   <p>チョコレート一覧</p>
   <% end %>
-<div>
+</div>
 
 <%= javascript_pack_tag 'pages/result_chart' %>
