@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  #admin_page_routing
+  namespace :admin do
+    root to: 'dashboards#index'
+    get 'login', to: 'user_sessions#new'
+    post 'login', to: 'user_sessions#create'
+    delete 'logout', to: 'user_sessions#destroy'
+  end
   #confirm mail letter_opener_web
   if Rails.env.development?
     mount LetterOpenerWeb::Engine, at: "/letter_opener" 
