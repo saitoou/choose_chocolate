@@ -1,9 +1,12 @@
 ja:
   activerecord:
-    :attributes:
+    attributes:
       chocolate:
         name: "チョコレート名"
         detail: "詳細"
       inquiry:
         title: "タイトル"
         message: "内容"
+      user:
+        email: "メール"
+        password: "パスワード"
