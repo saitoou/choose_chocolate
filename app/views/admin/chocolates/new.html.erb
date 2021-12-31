@@ -1,0 +1,28 @@
+<h1 class="text-center my-5">New</h1>
+<div class="row justify-content-center text-center">
+  <div class="col-8">
+    <div class="card text-center">
+      <div class="card-body">
+      <%= form_with model: @chocolate, url: admin_chocolates_path, local: true, method: :post do |f| %>
+        <div class="form-group">
+          <%= f.label :name, class: "text-info" %>
+          <%= f.text_field :name, class: "form-control" %>
+          <%= render 'shared/error_messages', model: f.object, attribute: :name %>
+        </div>
+        <div class="form-group">
+          <%= f.label :detail, class: "text-info" %><br>
+          <%= f.text_area :detail, class: "form-control"  %>
+          <%= render 'shared/error_messages', model: f.object, attribute: :detail %>
+        </div>
+        <div class="check_box" >
+          <%= f.label :image, class: "text-info" %>
+          <%= f.file_field :image, value: @chocolate.image, accept: 'image/*', class: "form-control" %>
+        </div>
+        <div class="actions">
+          <%= f.submit '送信', class: "btn btn-primary" %>
+        </div>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>

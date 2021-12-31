@@ -1,0 +1,29 @@
+<h1 class="text-center my-5">Chocolate Detail</h1>
+<div class="row justify-content-center text-center">
+  <div class="col-8">
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="text-info">Name</h5>
+          <%= @chocolate.name %>
+
+        <h5 class="text-info">Detail</h5>
+          <%= @chocolate.detail %>
+
+        <h5 class="py-3 text-info">Image</h5>
+      <% if @chocolate.image.blank? %>
+        <%= image_tag 'bar-chocolate.png', id: 'bar-choco' , size: "300x300"%>
+      <% else %>
+        <%= @chocolate.image %>
+      <% end %>
+      </div>
+    </div>
+    <ul>
+      <li class='list-inline-item'>
+        <%= button_to "編集", edit_admin_chocolate_path(@chocolate), method: :get, class: "btn btn-secondary" %>
+      </li>
+      <li class='list-inline-item'>
+        <%= button_to "削除", admin_chocolate_path(@chocolate), method: :delete, data: { confirm: '本当に削除してもよろしいですか？'}, class: "btn btn-danger" %>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -5,6 +5,7 @@ Rails.application.routes.draw do
     get 'login', to: 'user_sessions#new'
     post 'login', to: 'user_sessions#create'
     delete 'logout', to: 'user_sessions#destroy'
+    resources :chocolates
   end
   #confirm mail letter_opener_web
   if Rails.env.development?
