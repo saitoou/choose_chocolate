@@ -10,9 +10,6 @@ class Admin::BaseController < ApplicationController
   end
 
   def check_admin
-    if !(current_user.admin?)
-      flash.now[:notice] = "権限がありません"
-      redirect_to root_path
-    end
+    redirect_to root_path, warnign: "管理者以外ログインできません" unless current_user.admin?
   end
 end
