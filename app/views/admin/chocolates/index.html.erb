@@ -24,10 +24,10 @@
     <td>
       <ul>
         <li class='list-inline-item'>
-          <%= button_to "編集", edit_admin_chocolate_path(chocolate), method: :get, class: "btn btn-danger" %>
+          <%= button_to "編集", edit_admin_chocolate_path(chocolate), method: :get, class: "btn btn-secondary" %>
         </li>
         <li class='list-inline-item'>
-          <%= button_to "削除", admin_chocolate_path(chocolate), method: :delete, data: { confirm: '本当に削除してもよろしいですか？'}, class: "btn btn-secondary" %>
+          <%= button_to "削除", admin_chocolate_path(chocolate), method: :delete, data: { confirm: '本当に削除してもよろしいですか？'}, class: "btn btn-danger" %>
         </li>
       </ul>
     </td>
