@@ -7,8 +7,8 @@ class Admin::UserSessionsController < Admin::BaseController
   def create
     @user = login(params[:email], params[:password])
     if @user
-      flash[:notice] = "ログインしました"
       redirect_to admin_root_path
+      flash[:success] = "ログインしました"
     else
       flash.now[:danger] = "ログイン失敗しました"
       render :new
@@ -17,7 +17,7 @@ class Admin::UserSessionsController < Admin::BaseController
 
   def destroy
     logout
-    flash[:notice] = "ログアウトしました"
+    flash[:success] = "ログアウトしました"
     redirect_to admin_login_path
   end
 
