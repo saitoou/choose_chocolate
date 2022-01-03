@@ -1,0 +1,30 @@
+<div class="container">
+<div class="row justify-content-center text-center">
+  <div class="col-auto">
+    <div class="card text-center border-0"> 
+      <div class="card-body">
+      <% if @chocolate.image.blank? %>
+        <%= image_tag 'bar-chocolate.png', id: 'bar-choco' , size: "300x300"%>
+      <% else %>
+        <%= image_tag @chocolate.image, class:'drop-shadow', size: '400x300', id:'bar-choco' %>
+      <% end %>
+        <h1 class="card-title"><%= @chocolate.name %></h1>
+        <p class="card-body mb-5"><%= @chocolate.detail %></p>
+
+    <div class="container mb-5">
+      <%= link_to "https://www.jph-japon.co.jp/", class: 'store-url' do %>
+      <p>ジャン＝ポール・エヴァン</p>
+      <% end %>
+      <%= link_to "https://www.frederic-cassel.jp/", class: 'store-url ' do %>
+      <p>フレデリックカッセル</p>
+      <% end %>
+    </div>
+
+      <%= link_to chocolates_path, class:'btn btn-choco-list' do %>
+      <p>チョコレート一覧</p>
+      <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
