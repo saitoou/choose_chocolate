@@ -144,6 +144,7 @@ GEM
     marcel (1.0.1)
     matrix (0.4.2)
     method_source (1.0.0)
+    mini_magick (4.11.0)
     mini_mime (1.1.1)
     minitest (5.14.4)
     msgpack (1.4.2)
@@ -325,6 +326,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   letter_opener_web (~> 1.0)
   listen (~> 3.2)
+  mini_magick
   mysql2 (>= 0.4.4)
   puma (~> 4.1)
   rails (~> 6.0.3, >= 6.0.3.7)

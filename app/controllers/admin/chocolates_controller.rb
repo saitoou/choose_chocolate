@@ -21,7 +21,7 @@ class Admin::ChocolatesController < Admin::BaseController
 
   def show; end
 
-  def updated
+  def update
     if @chocolate.update(chocolate_params)
       flash[:notice] = "更新しました"
       redirect_to admin_chocolate_path

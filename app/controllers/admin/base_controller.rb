@@ -10,6 +10,9 @@ class Admin::BaseController < ApplicationController
   end
 
   def check_admin
-    redirect_to root_path, warnign: "管理者以外ログインできません" unless current_user.admin?
+    # 他ユーザーがいないためnilで判定
+    if current_user == nil
+      redirect_to root_path, warnign: "管理者以外ログインできません"
+    end
   end
 end
