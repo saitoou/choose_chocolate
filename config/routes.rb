@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   get 'tired_chocos', to: 'tired_chocos#new'
   get 'exhausted_chocos', to: 'exhausted_chocos#new'
   #chocolates list
-  get 'chocolates_list', to:  'chocolates#index'
+  resources :chocolates, only: %i[index show]
   #send_mail_page
   resource :inquiries, only: %i[new create]
 end

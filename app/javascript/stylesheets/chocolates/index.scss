@@ -9,7 +9,24 @@
   columns: 3;
 }
 
-.card {
-  margin-right: 15px;
-  margin-left: 15px;
+.drop-shadow {
+  box-shadow: 0 0 10px black;
 }
+
+.link {
+  text-decoration: none;
+  color: #6c3524;
+}
+
+.link:hover {
+  color: #6c3524;
+}
+
+.card-title {
+  font-family: Allison;
+}
+
+// .card {
+//   margin-right: 15px;
+//   margin-left: 15px;
+// }
