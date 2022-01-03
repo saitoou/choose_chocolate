@@ -13,7 +13,7 @@
       <% if @chocolate.image.blank? %>
         <%= image_tag 'bar-chocolate.png', id: 'bar-choco' , size: "300x300"%>
       <% else %>
-        <%= @chocolate.image %>
+        <%= image_tag @chocolate.image, size: '250x200', id:'bar-choco' %>
       <% end %>
       </div>
     </div>

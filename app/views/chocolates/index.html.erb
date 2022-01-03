@@ -1,15 +1,17 @@
 <div class="card-deck">
-  <% @chocolates_list.each do |choco| %>
-  <div class="card">
-    <% if choco.image.blank? %>
-      <%= image_tag 'bar-chocolate.png', id: 'bar-choco' , size: "70%x90"%>
-    <% else %>
-      <%= choco.image %>
-    <% end %>
-    <div class="card-body">
-      <h5 class="card-title"><%= choco.name %></h5>
-      <p class="card-text"><%= choco.detail %></p>
+<div class="card-columns">
+  <% @chocolate_lists.each do |choco| %>
+    <div class="card">
+      <% if choco.image.attached? %>
+        <%= image_tag choco.image, size: '190x150', id:'bar-choco' %>
+      <% else %>
+        <%= image_tag 'bar-chocolate.png', id: 'bar-choco' , size: "70%x90"%>
+      <% end %>
+      <div class="card-body">
+        <h5 class="card-title"><%= choco.name %></h5>
+        <p class="card-text"><%= choco.detail %></p>
+      </div>
     </div>
-  </div>
   <% end %>
+</div>
 </div>
