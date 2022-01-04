@@ -23,10 +23,10 @@ class Admin::ChocolatesController < Admin::BaseController
 
   def update
     if @chocolate.update(chocolate_params)
-      flash[:notice] = "更新しました"
+      flash[:success] = "更新しました"
       redirect_to admin_chocolate_path
     else
-      flash.now[:notice] = "更新に失敗"
+      flash.now[:danger] = "更新に失敗"
       render :edit
     end
   end

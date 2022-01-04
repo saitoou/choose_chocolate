@@ -19,6 +19,9 @@
     </div>
     <ul>
       <li class='list-inline-item'>
+        <%= button_to "一覧", admin_chocolates_path, method: :get, class: "btn btn-success" %>
+      </li>
+      <li class='list-inline-item'>
         <%= button_to "編集", edit_admin_chocolate_path(@chocolate), method: :get, class: "btn btn-secondary" %>
       </li>
       <li class='list-inline-item'>
