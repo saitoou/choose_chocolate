@@ -335,6 +335,7 @@ DEPENDENCIES
   rails (~> 6.0.3, >= 6.0.3.7)
   rails-i18n
   rails_best_practices
+  rake (~> 13.0.6)
   rspec-rails
   rubocop
   sass-rails (>= 6)
@@ -349,4 +350,4 @@ DEPENDENCIES
   webpacker (~> 4.0)
 
 BUNDLED WITH
-   2.2.26
+   2.3.4
