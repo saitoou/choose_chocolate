@@ -6,7 +6,7 @@
       <% if @chocolate.image.blank? %>
         <%= image_tag 'bar-chocolate.png', id: 'bar-choco' , size: "300x300"%>
       <% else %>
-        <%= image_tag @chocolate.image.variant( resize: "400x300" ) class:'drop-shadow', id:'bar-choco' %>
+        <%= image_tag @chocolate.image.variant( resize: "400x300" ), class:'drop-shadow', id:'bar-choco' %>
       <% end %>
         <h1 class="card-title"><%= @chocolate.name %></h1>
         <p class="card-body mb-5"><%= @chocolate.detail %></p>
