@@ -3,7 +3,7 @@
   <% @chocolate_lists.each do |choco| %>
     <div class="card mb-3 border-0">
       <% if choco.image.attached? %>
-        <%= image_tag choco.image, class: 'drop-shadow', size: '190x150', id:'bar-choco' %>
+        <%= image_tag choco.image.variant( resize: "190x150" ), class: 'drop-shadow', id:'bar-choco' %>
       <% else %>
         <%= image_tag 'bar-chocolate.png', id: 'bar-choco' , size: "190x150"%>
       <% end %>
