@@ -66,9 +66,6 @@ module.exports = function(api) {
         {
           async: false
         }
-      ],
-      [
-        '@babel/plugin_proposal-private-methods', { loose: true }
       ]
     ].filter(Boolean)
   }
