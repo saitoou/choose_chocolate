@@ -25,6 +25,7 @@ const image = document.getElementById("checklist");
 const result = document.getElementById("result");
 
 const bar_choco = document.getElementById("bar_choco");
+bar_choco.style.display = "none";
 
 //質問項目の切り替え
 const question01 = document.getElementById("question01");
@@ -35,7 +36,6 @@ const question04 = document.getElementById("question04");
 //ストレス判断指数
 const counter = [];
 
-bar_choco.style.display = "none";
 
 //クリック後、切り替え
 q1_01.onclick = function() {
