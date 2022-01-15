@@ -18,6 +18,13 @@
     <div id="chart"  data-sweet-value="<%= @exhausted_review.sweet %>" data-cacao-value="<%= @exhausted_review.cacao %>" data-appearance-value="<%= @exhausted_review.appearance %>" data-texture-value="<%= @exhausted_review.texture %>" data-melt-value="<%= @exhausted_review.melt %>" ></div>
     <canvas id="myChart" width="100px" height="100px"></canvas>
     </div>
+    
+    <div id="main" class="fixed-buttom text-right">
+    <%= link_to "https://twitter.com/share?&url=https://choosechocolate.herokuapp.com/&text=あなたの疲れを癒すのは#{choco.name}です！&hashtags=choosechocolate,癒しのチョコ&lang=ja", title: 'Twitter', target: :_blank, rel: 'noopener noreferrer', class: "twitter btn" do %>
+    <i class="fab fa-twitter share-button"></i>
+    <% end %>
+    </div>
+
   <% end %>
   <div class="text-center">
   <%= link_to chocolates_path, class:'btn btn-exhausted-chocos-list' do %>

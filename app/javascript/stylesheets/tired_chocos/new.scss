@@ -19,12 +19,22 @@
   font-family: Allison;
 }
 
+.twitter {
+  border-radius: 50%;
+  border: none;
+  width: 60px;
+}
+
 .btn-choco-list {
   padding-top: 18px;
   color: #6c3524;
   border-color: #6c3524;
   font-size: 28px;
   width: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 120px;
 }
 
 .btn-choco-list:hover {
