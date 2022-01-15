@@ -9,7 +9,7 @@
       <% if choco.image.blank? %>
         <%= image_tag 'bar-chocolate.png', id: 'checklist' , size: "350x300"%>
       <% else %>
-        <%= image_tag choco.image.variant( resize: "350x200" ), id:'checklist' %>
+        <%= image_tag choco.image.variant(resize: "350x200").processed, id:'checklist' %>
       <% end %>
       </div>
       <h3><%= choco.detail %></h3>
