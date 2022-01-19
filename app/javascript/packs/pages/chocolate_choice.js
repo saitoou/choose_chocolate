@@ -24,8 +24,9 @@ const image = document.getElementById("checklist");
 
 const result = document.getElementById("result");
 
+// 初めにnoneにすることで読み込み時の一瞬の写り込みを回避
+document.getElementById("bar_choco").style.display = "none";
 const bar_choco = document.getElementById("bar_choco");
-bar_choco.style.display = "none";
 
 //質問項目の切り替え
 const question01 = document.getElementById("question01");
