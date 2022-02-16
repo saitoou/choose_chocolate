@@ -1,0 +1,34 @@
+<div class="container">
+  <h1 class="font-weight-bold title-font text-center">Welcome! ChooseChocolate</h1>
+</div>
+<div class="container text-center mb-5">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <%= form_with model: @user, local: true do |f| %>
+        <div class="input-form h3 py-3 shadow-none">
+          <%= f.label :name, User.human_attribute_name(:name), class: "required" %><br>
+          <%= f.text_field :name, type: "text", placeholder: "ChooseChocolate" %>
+          <%= render 'shared/error_messages', model: f.object, attribute: :name %>
+        </div>
+        <div class="input-form h3 py-3 shadow-none">
+          <%= f.label :email, User.human_attribute_name(:email), class: "required" %><br>
+          <%= f.text_field :email, type: "text", placeholder: "choco@example.com" %>
+          <%= render 'shared/error_messages', model: f.object, attribute: :email %>
+        </div>
+        <div class="input-form h3 py-3 shadow-none">
+          <%= f.label :password, User.human_attribute_name(:password), class: "required" %><br>
+          <%= f.text_field :password, type: "password", placeholder: "password" %>
+          <%= render 'shared/error_messages', model: f.object, attribute: :password %>
+        </div>
+        <div class="input-form h3 py-3 shadow-none mb-5">
+          <%= f.label :password_confirmation, User.human_attribute_name(:password_confirmation), class: "required" %><br>
+          <%= f.text_field :password_confirmation, type: "password", placeholder: "password" %>
+          <%= render 'shared/error_messages', model: f.object, attribute: :password %>
+        </div>
+        <div class="actions text-center topbtn">
+          <%= f.submit '登録', class: "btn btn-malformation btn-outline-light" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

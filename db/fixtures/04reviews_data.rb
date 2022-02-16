@@ -1,4 +1,6 @@
-require "csv"
+# frozen_string_literal: true
+
+require 'csv'
 
 CSV.foreach('db/fixtures/03reviews.csv', headers: true) do |row|
   Review.create(

@@ -1,0 +1,11 @@
+<% if logged_in? %>
+  <% if current_user.bookmarks_chocolates.include?(chocolate) %>
+    <%= render 'bookmarks/unbookmark', { chocolate: chocolate } %>
+  <% else %>
+    <%= render 'bookmarks/bookmark', { chocolate: chocolate } %>
+  <% end %>
+<% else %>
+  <span class="fa-fw btn good-button">
+  <i class="far fa-thumbs-up bookmark-icon" id="js-bookmark-icon"></i>
+  </span>
+<% end %>

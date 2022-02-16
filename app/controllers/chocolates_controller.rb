@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class ChocolatesController < ApplicationController
-# chocolate一覧を見るためのcontroller
+  # chocolate一覧を見るためのcontroller
   def index
     @chocolate_lists = Chocolate.all
   end
@@ -7,5 +9,4 @@ class ChocolatesController < ApplicationController
   def show
     @chocolate = Chocolate.find(params[:id])
   end
-
 end

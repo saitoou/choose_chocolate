@@ -3,17 +3,21 @@
   <% @chocolate_lists.each do |choco| %>
     <div class="card mb-3 border-0">
       <% if choco.image.attached? %>
-        <%= image_tag choco.image.variant(resize: "190x150").processed, class: 'drop-shadow', id:'bar-choco' %>
+        <%= image_tag choco.image.variant(resize: "185x130").processed, class: 'drop-shadow', id:'bar-choco' %>
       <% else %>
-        <%= image_tag 'bar-chocolate.png', id: 'bar-choco' , size: "190x150"%>
+        <%= image_tag 'bar-chocolate.png', id: 'bar-choco' , size: "185x130"%>
       <% end %>
       <div class="card-body">
       <%= link_to chocolate_path(choco), class: 'link' do %>
         <h1 class="card-title"><%= choco.name %></h1>
       <% end %>
-        <p class="card-text"><%= choco.detail %></p>
+      <div class='mr-10 float-right'>
+          <%= render 'bookmarks/bookmark_area', { chocolate: choco } %>
+      </div>
+      <p class="card-text"><%= choco.detail %></p>
       </div>
     </div>
   <% end %>
 </div>
 </div>
+

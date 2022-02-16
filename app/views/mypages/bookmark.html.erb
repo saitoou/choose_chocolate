@@ -1,0 +1,35 @@
+<div class="container my-lg-5">
+  <div class="container text-center">
+    <h1 class="font-weight-bold title-font">MyChocolatePage</h1>
+  </div>
+  <div class="container text-center my-5">
+    <div class="bookmark">
+      <% if @bookmark_chocolates.present? %>
+        <div class="card-deck my-lg-5">
+        <div class="card-columns text-center">
+          <% @bookmark_chocolates.each do |choco| %>
+            <div class="card mb-3 border-0">
+              <% if choco.image.attached? %>
+                <%= image_tag choco.image.variant(resize: "185x130"), class: 'drop-shadow', id:'bar-choco' %>
+              <% else %>
+                <%= image_tag 'bar-chocolate.png', id: 'bar-choco' , size: "185x130"%>
+              <% end %>
+              <div class="card-body">
+                <%= link_to chocolate_path(choco), class: 'link' do %>
+                  <h1 class="card-title"><%= choco.name %></h1>
+                <% end %>
+                <p class="card-text"><%= choco.detail %></p>
+              </div>
+            </div>
+          <% end %>
+        </div>
+        </div>
+      <% else %>
+        <div class="container my-5">
+          <h2 class="my-5">お気に入りのチョコレートを見つけよう</h2>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+

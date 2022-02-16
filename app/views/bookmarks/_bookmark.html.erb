@@ -1,0 +1,5 @@
+<%= link_to chocolate_bookmarks_path(chocolate_id: chocolate.id), id: "js-bookmark-button-for-chocolate-#{chocolate.id}", method: :post, remote: true do %>
+  <span class="fa-fw btn good-button">
+  <i class="far fa-thumbs-up bookmark-icon" id="js-bookmark-icon"></i>
+  </span>
+<% end %>

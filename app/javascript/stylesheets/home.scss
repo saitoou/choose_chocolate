@@ -24,12 +24,23 @@ body {
   font-size: 32px;
   padding-top: 18px;
   padding-right: 18px;
+  padding-left: 18px;
 }
 
 .sub-thema:hover {
   color: #6c3524;
   text-decoration: none;
 }
+
+.dropdown {
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.btn-menu {
+  margin-right: 20px;
+}
+
 
 /*
  * Cover

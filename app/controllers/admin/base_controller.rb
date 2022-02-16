@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Admin::BaseController < ApplicationController
   before_action :check_admin
   layout 'admin/layouts/application'
@@ -5,14 +7,12 @@ class Admin::BaseController < ApplicationController
   private
 
   def not_authenticated
-    flash[:alert] = "ログインしてください"
+    flash[:alert] = 'ログインしてください'
     redirect_to admin_login_path
   end
 
   def check_admin
     # 他ユーザーがいないためnilで判定
-    if current_user == nil
-      redirect_to root_path, warnign: "管理者以外ログインできません"
-    end
+    redirect_to root_path, warnign: '管理者以外ログインできません' if current_user.nil?
   end
 end

@@ -1,4 +1,6 @@
-require "csv"
+# frozen_string_literal: true
+
+require 'csv'
 
 CSV.foreach('db/fixtures/02chocolates.csv', headers: true) do |row|
   Chocolate.create(

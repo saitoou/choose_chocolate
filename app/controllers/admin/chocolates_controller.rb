@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 class Admin::ChocolatesController < Admin::BaseController
   before_action :set_chocolate, only: %i[show edit update destroy]
   def new
@@ -8,7 +9,7 @@ class Admin::ChocolatesController < Admin::BaseController
     @chocolate = Chocolate.new(chocolate_params)
 
     if @chocolate.save
-      flash[:notice] = "追加しました"
+      flash[:notice] = '追加しました'
       redirect_to new_admin_chocolate_path
     end
   end
@@ -23,10 +24,10 @@ class Admin::ChocolatesController < Admin::BaseController
 
   def update
     if @chocolate.update(chocolate_params)
-      flash[:success] = "更新しました"
-      redirect_to admin_chocolate_path
+      flash[:success] = '更新しました'
+      redirect_to admin_chocolates_path
     else
-      flash.now[:danger] = "更新に失敗"
+      flash.now[:danger] = '更新に失敗'
       render :edit
     end
   end

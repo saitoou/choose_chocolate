@@ -1,0 +1,27 @@
+<div class="container">
+  <h1 class="font-weight-bold title-font text-center">login</h1>
+</div>
+<div class="container text-center py-3">
+  <div class="row">
+    <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+      <%= form_with url: login_path, local: true do |f| %>
+        <div class="input-form h3 py-3 shadow-none">
+          <%= f.label :email, User.human_attribute_name(:email)%><br>
+          <%= f.text_field :email, type: "text", placeholder: "choco@example.com" %>
+        </div>
+        <div class="input-form h3 py-3 shadow-none mb-5">
+          <%= f.label :password, User.human_attribute_name(:password) %><br>
+          <%= f.text_field :password, type: "password", placeholder: "password" %>
+        </div>
+        <div class="actions text-center topbtn mb-5">
+          <%= f.submit 'ログイン', class: "btn btn-malformation btn-outline-light" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class='text-center mb-5'>
+  <%= link_to 'ユーザー登録はこちら', new_user_path, class: "choco" %><br>
+  <a href="#">パスワードお忘れの方</a>
+</div>
+</div>
+

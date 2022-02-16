@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Review < ApplicationRecord
   belongs_to :chocolate
   validates :sweet, presence: true
@@ -5,5 +7,4 @@ class Review < ApplicationRecord
   validates :appearance, presence: true
   validates :texture, presence: true
   validates :melt, presence: true
-
 end
