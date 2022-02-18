@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  get 'pass_word_resets/create'
+  get 'pass_word_resets/edit'
+  get 'pass_word_resets/update'
   # admin_page_routing
   namespace :admin do
     root to: 'dashboards#index'
@@ -37,7 +40,8 @@ Rails.application.routes.draw do
   get 'login', to: 'user_sessions#new'
   post 'login', to: 'user_sessions#create'
   delete 'logout', to: 'user_sessions#destroy'
-  
+  # passward reset
+  resources :password_resets, only: %i[new create edit update]
   # confirm mail letter_opener_web
   mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
 end

@@ -9,13 +9,10 @@ class User < ApplicationRecord
   validates :password_confirmation, presence: true, if: -> { new_record? || changes[:crypted_password] }
   
   validates :email, uniqueness: true, presence: true
+  validates :reset_password_token, presence: true, uniqueness: true, allow_nil: true
 
   enum role: { general: 0, admin: 1 }
 
-  # def own?(object)
-  #   id == object.user_id
-  # end
-  
   # register and remove bookmark
   def bookmark(chocolate)
     bookmarks_chocolates << chocolate
@@ -25,7 +22,4 @@ class User < ApplicationRecord
     bookmarks_chocolates.destroy(chocolate)
   end
 
-  # def bookmark?(chocolate)
-  #   bookmarks_chocolates.include?(chocolate)
-  # end
 end
