@@ -22,11 +22,14 @@
     <%= link_to "https://twitter.com/share?&url=https://choosechocolate.herokuapp.com/&text=あなたの疲れを癒すのは#{@exhausted_choco.name}です！&hashtags=choosechocolate,癒しのチョコ&lang=ja", title: 'Twitter', target: :_blank, rel: 'noopener noreferrer', class: "twitter btn" do %>
     <i class="fab fa-twitter share-button"></i>
     <% end %>
+      <div class="bookmark-<%= @exhausted_choco.id %> chocolate-fav">
+      <%= render 'bookmarks/bookmark_area', chocolate: @exhausted_choco %>
+    </div>
     </div>
 
   <div class="text-center">
   <%= link_to chocolates_path, class:'btn btn-exhausted-chocos-list' do %>
-  <p>チョコレート一覧</p>
+  <p>index</p>
   <% end %>
   </div>
 </div>

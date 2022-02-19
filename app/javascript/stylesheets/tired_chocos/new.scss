@@ -22,19 +22,25 @@
 .twitter {
   border-radius: 50%;
   border: none;
-  width: 60px;
+  width: 58px;
+}
+
+.good-button {
+  border-radius: 90%;
+  border: none;
+  width: 58px;
 }
 
 .btn-choco-list {
-  padding-top: 18px;
+  padding-top: 7px;
   color: #6c3524;
   border-color: #6c3524;
-  font-size: 28px;
-  width: 300px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-bottom: 120px;
+  font-size: 50px;
+  font-weight: bold;
+  width: 200px;
+  height: 80px;
+  font-family: Allison;
+  border: none;
 }
 
 .btn-choco-list:hover {
