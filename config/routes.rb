@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     post 'login', to: 'user_sessions#create'
     delete 'logout', to: 'user_sessions#destroy'
     resources :chocolates
+    resources :users, only: %i[index edit update destroy]
   end
   # static_pages_path
   root 'static_pages#home'
