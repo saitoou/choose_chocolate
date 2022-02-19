@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
 class ApplicationController < ActionController::Base
+  add_flash_types :success, :info, :warning, :danger
 
   private
   def not_authenticated
-    flash[:alert] = 'ログインしてください'
-    redirect_to login_url
+    redirect_to login_url, alert: 'ログインしてください'
   end
 end
