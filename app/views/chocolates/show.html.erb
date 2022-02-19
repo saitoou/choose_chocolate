@@ -9,6 +9,9 @@
         <%= image_tag @chocolate.image.variant(resize: "400x300").processed, class:'drop-shadow', id:'bar-choco' %>
       <% end %>
         <h1 class="card-title"><%= @chocolate.name %></h1>
+        <div class='mr-10 float-right'>
+          <%= render 'bookmarks/bookmark_area', { chocolate: @chocolate } %>
+      </div>
         <p class="card-body mb-5"><%= @chocolate.detail %></p>
 
     <h2 class="mb-5">store info</h2>  

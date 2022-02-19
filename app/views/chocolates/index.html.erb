@@ -11,9 +11,6 @@
       <%= link_to chocolate_path(choco), class: 'link' do %>
         <h1 class="card-title"><%= choco.name %></h1>
       <% end %>
-      <div class='mr-10 float-right'>
-          <%= render 'bookmarks/bookmark_area', { chocolate: choco } %>
-      </div>
       <p class="card-text"><%= choco.detail %></p>
       </div>
     </div>
