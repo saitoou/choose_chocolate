@@ -8,10 +8,12 @@
         <div class="input-form h3 py-3 shadow-none">
           <%= f.label :email, User.human_attribute_name(:email)%><br>
           <%= f.text_field :email, type: "text", placeholder: "choco@example.com" %>
+          <%= render 'shared/error_messages', model: f.object, attribute: :email %>
         </div>
         <div class="input-form h3 py-3 shadow-none mb-5">
           <%= f.label :password, User.human_attribute_name(:password) %><br>
           <%= f.text_field :password, type: "password", placeholder: "password" %>
+          <%= render 'shared/error_messages', model: f.object, attribute: :password %>
         </div>
         <div class="actions text-center topbtn mb-5">
           <%= f.submit 'ログイン', class: "btn btn-malformation btn-outline-light" %>
