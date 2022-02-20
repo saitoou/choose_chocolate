@@ -3,12 +3,12 @@
 require 'rails_helper'
 
 RSpec.describe Inquiry, type: :model do
-  it 'タイトル、メッセージがある場合' do
+  it 'タイトル、メッセージがある場合、有効' do
     inquiry = build(:inquiry)
     expect(inquiry).to be_valid
   end
 
-  it 'メッセージがない場合' do
+  it 'メッセージがない場合、無効' do
     inquiry = build(:inquiry, title: nil)
     expect(inquiry).not_to be_valid
   end
