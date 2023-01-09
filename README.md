@@ -38,7 +38,7 @@
 マニアックな人が初心者向けにチョコレートの情報を提供する
 
 ## アプリURL
-https://choosechocolate.herokuapp.com/
+
 
 ## 画面遷移図
 https://www.figma.com/file/zdfGxBBBHW4wXDxgDd7RUb/ChooseChocolate?node-id=0%3A1
